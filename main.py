@@ -18,7 +18,7 @@ words = get_close_matches(input_word, [key for key, value in dictionary.items()]
 if len(words) > 0:
     for word in words:
         if word != input_word:
-            print("Did You Mean \033[1m" + word + "\033[0m?")
+            print("Did You Mean \033[1m" + word + "\033[0m instead of \033[1m"+input_word+"\033[0m?")
         if word in dictionary:
             printResult(word)
         elif word.title() in dictionary:
